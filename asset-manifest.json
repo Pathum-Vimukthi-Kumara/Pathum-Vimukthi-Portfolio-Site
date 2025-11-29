@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Pathum-Vimukthi-Portfolio-Site/static/css/main.24f918a2.css",
+    "main.js": "/Pathum-Vimukthi-Portfolio-Site/static/js/main.fe1cbe8d.js",
+    "static/js/453.1407b060.chunk.js": "/Pathum-Vimukthi-Portfolio-Site/static/js/453.1407b060.chunk.js",
+    "index.html": "/Pathum-Vimukthi-Portfolio-Site/index.html",
+    "main.24f918a2.css.map": "/Pathum-Vimukthi-Portfolio-Site/static/css/main.24f918a2.css.map",
+    "main.fe1cbe8d.js.map": "/Pathum-Vimukthi-Portfolio-Site/static/js/main.fe1cbe8d.js.map",
+    "453.1407b060.chunk.js.map": "/Pathum-Vimukthi-Portfolio-Site/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24f918a2.css",
+    "static/js/main.fe1cbe8d.js"
+  ]
+}
