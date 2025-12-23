@@ -16,7 +16,7 @@ const Home = () => {
   const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState('Cyber Security');
   const [isCvPreviewOpen, setIsCvPreviewOpen] = useState(false);
-  const cvUrl = `${process.env.PUBLIC_URL}/assets/pathumcv.pdf`;
+  const cvUrl = `${process.env.PUBLIC_URL}/assets/pathumcv1.pdf`;
 
   return (
     <div className="min-h-screen bg-purple-gradient pt-20 relative">
