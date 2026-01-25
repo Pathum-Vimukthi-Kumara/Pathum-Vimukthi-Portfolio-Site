@@ -7,14 +7,6 @@ const projects = [
   
 
    {
-    title: 'Volunteer Management Platform (Group Project)',
-    image: `${process.env.PUBLIC_URL}/assets/1.png`,
-    description: 'Developed a comprehensive volunteer management system that connects organizations with volunteers through an integrated digital platform. Architected the backend infrastructure using Ballerina, implemented RESTful APIs and WebSocket-based real-time chat for seamless communication, and designed an optimized MySQL database schema. The platform features event management, volunteer discovery and application system, donation campaign hosting, and role-based access control. Managed the complete project lifecycle from architecture design to deployment, ensuring efficient data management and smooth frontend-backend integration.',
-    tech: ['Ballerina','React js','MySql'],
-    github: 'https://github.com/Pathum-Vimukthi-Kumara/iwb25-009-targaryenx',
-    demo: 'https://github.com/Pathum-Vimukthi-Kumara/iwb25-009-targaryenx',
-  },
-   {
 
     title: 'Complaint Management System (Group Project)',
     image: `${process.env.PUBLIC_URL}/assets/image.png`,
@@ -22,6 +14,32 @@ const projects = [
     tech: ['React','Nest js','MySql'],
     github: 'https://co-re-test-front.vercel.app/',
     demo: 'https://co-re-test-front.vercel.app/',
+  },
+     {
+    title: 'Phishing-Detection',
+    image: `${process.env.PUBLIC_URL}/assets/phishing_extension.png`,
+    description: 'PhishGuard is a Chrome extension that detects phishing by scanning pages and links, using a local Flask API for on-device URL and text classification to warn users, block malicious sites, and preserve privacy.',
+    tech: ['Python','Flask','scikit-learn','Chrome Extension APIs',' JavaScript'],
+    github: 'https://github.com/Pathum-Vimukthi-Kumara/Phishing-Detection-Extension.git',
+    demo: 'https://github.com/Pathum-Vimukthi-Kumara/Phishing-Detection-Extension.git',
+  },
+
+    {
+    title: 'Network Monitoring Dashboard',
+    image: `${process.env.PUBLIC_URL}/assets/NetworkDashboard.jpeg`,
+    description: 'A real-time network flood attack monitoring and visualization system that tracks network performance and topology, monitors key metrics (latency, throughput, packet loss), and provides live charts, alerts, and filtering to help administrators quickly detect attacks, diagnose issues',
+    tech: ['Python','Streamlit','scapy','pandas','pymongo','plotly'],
+    github: 'https://github.com/Pathum-Vimukthi-Kumara/Network-Dashboard.git',
+    demo: 'https://github.com/Pathum-Vimukthi-Kumara/Network-Dashboard.git',
+  },
+
+    {
+    title: 'Volunteer Management Platform',
+    image: `${process.env.PUBLIC_URL}/assets/1.png`,
+    description: 'Developed a comprehensive volunteer management system that connects organizations with volunteers through an integrated digital platform. Architected the backend infrastructure using Ballerina, implemented RESTful APIs and WebSocket-based real-time chat for seamless communication, and designed an optimized MySQL database schema. The platform features event management, volunteer discovery and application system, donation campaign hosting, and role-based access control. Managed the complete project lifecycle from architecture design to deployment, ensuring efficient data management and smooth frontend-backend integration.',
+    tech: ['Ballerina','React js','MySql'],
+    github: 'https://github.com/Pathum-Vimukthi-Kumara/iwb25-009-targaryenx',
+    demo: 'https://github.com/Pathum-Vimukthi-Kumara/iwb25-009-targaryenx',
   },
 
 
