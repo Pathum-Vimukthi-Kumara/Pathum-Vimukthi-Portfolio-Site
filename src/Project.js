@@ -15,6 +15,15 @@ const projects = [
     github: 'https://co-re-test-front.vercel.app/',
     demo: 'https://co-re-test-front.vercel.app/',
   },
+      {
+    title: 'Volunteer Management Platform',
+    image: `${process.env.PUBLIC_URL}/assets/1.png`,
+    description: 'Developed a comprehensive volunteer management system that connects organizations with volunteers through an integrated digital platform. Architected the backend infrastructure using Ballerina, implemented RESTful APIs and WebSocket-based real-time chat for seamless communication, and designed an optimized MySQL database schema. The platform features event management, volunteer discovery and application system, donation campaign hosting, and role-based access control. Managed the complete project lifecycle from architecture design to deployment, ensuring efficient data management and smooth frontend-backend integration.',
+    tech: ['Ballerina','React js','MySql'],
+    github: 'https://github.com/Pathum-Vimukthi-Kumara/iwb25-009-targaryenx',
+    demo: 'https://github.com/Pathum-Vimukthi-Kumara/iwb25-009-targaryenx',
+  },
+
      {
     title: 'Phishing-Detection',
     image: `${process.env.PUBLIC_URL}/assets/phishing_extension.png`,
@@ -33,14 +42,6 @@ const projects = [
     demo: 'https://github.com/Pathum-Vimukthi-Kumara/Network-Dashboard.git',
   },
 
-    {
-    title: 'Volunteer Management Platform',
-    image: `${process.env.PUBLIC_URL}/assets/1.png`,
-    description: 'Developed a comprehensive volunteer management system that connects organizations with volunteers through an integrated digital platform. Architected the backend infrastructure using Ballerina, implemented RESTful APIs and WebSocket-based real-time chat for seamless communication, and designed an optimized MySQL database schema. The platform features event management, volunteer discovery and application system, donation campaign hosting, and role-based access control. Managed the complete project lifecycle from architecture design to deployment, ensuring efficient data management and smooth frontend-backend integration.',
-    tech: ['Ballerina','React js','MySql'],
-    github: 'https://github.com/Pathum-Vimukthi-Kumara/iwb25-009-targaryenx',
-    demo: 'https://github.com/Pathum-Vimukthi-Kumara/iwb25-009-targaryenx',
-  },
 
 
   {
