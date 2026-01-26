@@ -10,6 +10,8 @@ import Certificate from './Certificate';
 import Volunteering from './Volunteering';
 import Project from './Project';
 import GetInTouch from './GetInTouch';
+import Skills from './Skills';
+
 // Handles scroll to section based on path
 function ScrollHandler({ sections }) {
   const location = useLocation();
@@ -19,12 +21,13 @@ function ScrollHandler({ sections }) {
 
     const sectionMap = {
       '': sections.homeRef,
-      about: sections.aboutRef,
+      home: sections.homeRef,
+      skills: sections.skillsRef,
+      project: sections.projectRef,
       certificate: sections.certificateRef,
       volunteering: sections.volunteeringRef,
-      project: sections.projectRef,
+      about: sections.aboutRef,
       'get-in-touch': sections.getInTouchRef,
-      portfolio: sections.portfolioRef,
     };
 
     const ref = sectionMap[path];
@@ -34,12 +37,12 @@ function ScrollHandler({ sections }) {
   }, [
     location,
     sections.homeRef,
-    sections.aboutRef,
+    sections.skillsRef,
+    sections.projectRef,
     sections.certificateRef,
     sections.volunteeringRef,
-    sections.projectRef,
-    sections.getInTouchRef,
-    sections.portfolioRef
+    sections.aboutRef,
+    sections.getInTouchRef
   ]);
 
   return null;
@@ -47,43 +50,48 @@ function ScrollHandler({ sections }) {
 
 function MainContent() {
   const homeRef = useRef(null);
-  const aboutRef = useRef(null);
+  const skillsRef = useRef(null);
+  const projectRef = useRef(null);
   const certificateRef = useRef(null);
   const volunteeringRef = useRef(null);
-  const projectRef = useRef(null);
+  const aboutRef = useRef(null);
   const getInTouchRef = useRef(null);
-  const portfolioRef = useRef(null);
 
   const sections = {
     homeRef,
-    aboutRef,
+    skillsRef,
+    projectRef,
     certificateRef,
     volunteeringRef,
-    projectRef,
+    aboutRef,
     getInTouchRef,
-    portfolioRef,
   };
 
   return (
-    <>
-      <ScrollHandler sections={sections} />
-      <Header />
+    <div className="relative overflow-x-hidden bg-purple-gradient text-purple-light min-h-screen">
+      {/* Aesthetic Background Blobs */}
+      <div className="fixed top-0 left-0 w-full h-full pointer-events-none z-0">
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-secondary/10 rounded-full blur-[120px] animate-pulse"></div>
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-primary/10 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-[30%] right-[10%] w-[30%] h-[30%] bg-purple-accent/5 rounded-full blur-[100px] animate-pulse" style={{ animationDelay: '2s' }}></div>
+      </div>
 
-      <div ref={homeRef}><Home /></div>
-      <div ref={projectRef}><Project /></div>
-      <div ref={certificateRef}><Certificate /></div>
-      
-      
-      <div ref={volunteeringRef}><Volunteering /></div>
-   
-      -
-      
+      <div className="relative z-10">
+        <ScrollHandler sections={sections} />
+        <Header />
 
-<div ref={getInTouchRef}><GetInTouch /></div>
-<div ref={aboutRef}><About /></div>
-      <Footer />
-      <ScrollToTop />
-    </>
+        <div ref={homeRef}><Home /></div>
+        <div ref={skillsRef} className="bg-black/5"><Skills /></div>
+        <div ref={projectRef}><Project /></div>
+        <div ref={certificateRef} className="bg-black/5"><Certificate /></div>
+        <div ref={volunteeringRef}><Volunteering /></div>
+        <div ref={aboutRef} className="bg-black/5"><About /></div>
+        <div ref={getInTouchRef}><GetInTouch /></div>
+
+        <Footer />
+        <ScrollToTop />
+      </div>
+    </div>
   );
 }
 

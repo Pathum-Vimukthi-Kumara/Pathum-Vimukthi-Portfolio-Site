@@ -4,11 +4,12 @@ import { Link, useLocation } from 'react-router-dom';
 
 const navLinks = [
   { to: '/', label: 'Home' },
+  { to: '/skills', label: 'Skills' },
   { to: '/project', label: 'Projects' },
   { to: '/certificate', label: 'Achievements' },
   { to: '/volunteering', label: 'Volunteering' },
-  { to: '/get-in-touch', label: 'Contact' },
   { to: '/about', label: 'About' },
+  { to: '/get-in-touch', label: 'Contact' },
 ];
 
 const Header = () => {
@@ -23,13 +24,19 @@ const Header = () => {
     setIsMobileMenuOpen(false);
   };
 
+  // Helper to check active state for the current scroll position logic
+  const isActive = (path) => {
+    if (path === '/' && location.pathname === '/') return true;
+    return location.pathname === path;
+  };
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-purple-dark/90 border-b border-purple-secondary/20 shadow-lg">
+    <header className="fixed top-0 left-0 right-0 z-[100] backdrop-blur-xl bg-purple-dark/95 border-b border-purple-secondary/20 shadow-2xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
         <nav className="flex justify-between items-center">
           {/* Logo/Brand */}
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="flex items-center space-x-2 sm:space-x-3 group"
             onClick={closeMobileMenu}
           >
@@ -48,34 +55,32 @@ const Header = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className={`relative px-3 lg:px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 group ${
-                  location.pathname === link.to 
-                    ? 'text-purple-secondary bg-purple-secondary/10' 
-                    : 'text-purple-light hover:text-purple-secondary hover:bg-purple-secondary/5'
-                }`}
+                className={`relative px-3 lg:px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 group ${isActive(link.to)
+                  ? 'text-purple-secondary bg-purple-secondary/10'
+                  : 'text-purple-light hover:text-purple-secondary hover:bg-purple-secondary/5'
+                  }`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <span className="relative z-10">{link.label}</span>
-                
+
                 {/* Active indicator */}
-                {location.pathname === link.to && (
+                {isActive(link.to) && (
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-secondary/20 to-purple-primary/20 rounded-lg animate-pulse"></div>
                 )}
-                
+
                 {/* Hover effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-secondary/10 to-purple-primary/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
+
                 {/* Bottom border indicator */}
-                <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-purple-secondary transition-all duration-300 group-hover:w-3/4 ${
-                  location.pathname === link.to ? 'w-3/4' : ''
-                }`}></div>
+                <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-purple-secondary transition-all duration-300 group-hover:w-3/4 ${isActive(link.to) ? 'w-3/4' : ''
+                  }`}></div>
               </Link>
             ))}
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden p-2 rounded-lg text-purple-light hover:text-purple-secondary hover:bg-purple-secondary/10 transition-colors duration-300 touch-target"
+          <button
+            className="md:hidden p-2 rounded-lg text-purple-light hover:text-purple-secondary hover:bg-purple-secondary/10 transition-colors duration-300 touch-target relative z-50"
             onClick={toggleMobileMenu}
             aria-label="Toggle mobile menu"
           >
@@ -91,24 +96,21 @@ const Header = () => {
           </button>
         </nav>
 
-        {/* Mobile Menu */}
-        <div className={`md:hidden transition-all duration-300 ease-in-out ${
-          isMobileMenuOpen 
-            ? 'max-h-96 opacity-100 visible' 
-            : 'max-h-0 opacity-0 invisible'
-        } overflow-hidden`}>
-          <div className="py-4 space-y-2">
-            {navLinks.map((link, index) => (
+        {/* Mobile Menu - Solid Color & High Contrast */}
+        <div className={`md:hidden absolute left-0 right-0 top-[60px] sm:top-[72px] transition-all duration-300 ease-out ${isMobileMenuOpen
+            ? 'opacity-100 translate-y-0 visible'
+            : 'opacity-0 -translate-y-4 invisible'
+          } overflow-hidden bg-purple-dark border-b border-purple-secondary/40 z-[110] shadow-2xl`}>
+          <div className="py-2 px-4 space-y-1">
+            {navLinks.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
-                className={`block px-4 py-3 text-base font-medium rounded-lg transition-all duration-300 touch-target ${
-                  location.pathname === link.to 
-                    ? 'text-purple-secondary bg-purple-secondary/10 border-l-4 border-purple-secondary' 
-                    : 'text-purple-light hover:text-purple-secondary hover:bg-purple-secondary/5'
-                }`}
+                className={`block px-5 py-4 text-base font-bold transition-all duration-200 border-l-4 ${isActive(link.to)
+                    ? 'text-white bg-purple-secondary border-white shadow-lg'
+                    : 'text-purple-light/80 border-transparent hover:text-white hover:bg-purple-secondary/20'
+                  }`}
                 onClick={closeMobileMenu}
-                style={{ animationDelay: `${index * 0.05}s` }}
               >
                 {link.label}
               </Link>
@@ -116,15 +118,15 @@ const Header = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div 
+        <div
           className="fixed inset-0  z-40 md:hidden"
           onClick={closeMobileMenu}
         />
       )}
-      
+
       {/* Subtle gradient border at bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-secondary/30 to-transparent"></div>
     </header>
