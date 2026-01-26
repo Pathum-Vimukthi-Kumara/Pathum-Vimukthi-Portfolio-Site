@@ -18,9 +18,9 @@ const projects = [
     demo: 'https://github.com/Pathum-Vimukthi-Kumara/Personal-Library-Management-System-DevOps.git',
   },
 
-    {
+  {
     title: 'Phishing Detection',
-    image: `${process.env.PUBLIC_URL}/assets/red-spam-detected-icon-phishing-scam-hacking-concept-cyber-security-concept-alert-message_123447-1494.avif`,
+    image: `${process.env.PUBLIC_URL}/assets/phish-guard.png`,
     description: 'PhishGuard is a ML Powered Chrome extension that detects phishing by scanning pages and links.',
     features: [
       'On-device URL and text classification using a local Flask API',
@@ -33,7 +33,7 @@ const projects = [
     demo: 'https://github.com/Pathum-Vimukthi-Kumara/Phishing-Detection-Extension.git',
   },
 
-  
+
   {
 
     title: 'Complaint Management System ',
@@ -52,7 +52,7 @@ const projects = [
     demo: 'https://co-re-test-front.vercel.app/',
   },
 
-    {
+  {
     title: 'Volunteer Management Platform',
     image: `${process.env.PUBLIC_URL}/assets/1.png`,
     description: 'Developed a comprehensive volunteer management system that connects organizations with volunteers through an integrated digital platform. ',
