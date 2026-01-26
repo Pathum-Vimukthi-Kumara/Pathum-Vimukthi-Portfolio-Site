@@ -39,20 +39,7 @@ const projects = [
     github: 'https://github.com/Pathum-Vimukthi-Kumara/iwb25-009-targaryenx',
     demo: 'https://github.com/Pathum-Vimukthi-Kumara/iwb25-009-targaryenx',
   },
-  {
-    title: 'Budget Tracker',
-    image: `${process.env.PUBLIC_URL}/assets/BudgetTracker.png`,
-    description: 'Developed GUI interface for monitoring active connections, logging requests, and viewing connection Developed a comprehensive budget management application for both desktop and web platforms.',
-    features: [
-      'Robust CRUD operations for transactions',
-      'Integrated calendar for tracking expenses',
-      'Dynamic graphs and visualizations for financial data',
-      'Cross-platform support for desktop and web'
-    ],
-    tech: ['React', 'Express js ', ' MySql', 'C#'],
-    github: 'https://github.com/Pathum-Vimukthi-Kumara/Budget_Tracker',
-    demo: 'https://github.com/Pathum-Vimukthi-Kumara/Budget_Tracker',
-  },
+  
 
   {
     title: 'Phishing Detection',
@@ -82,6 +69,20 @@ const projects = [
     tech: ['Python', 'Streamlit', 'scapy', 'pandas', 'pymongo', 'plotly'],
     github: 'https://github.com/Pathum-Vimukthi-Kumara/Network-Dashboard.git',
     demo: 'https://github.com/Pathum-Vimukthi-Kumara/Network-Dashboard.git',
+  },
+  {
+    title: 'Budget Tracker',
+    image: `${process.env.PUBLIC_URL}/assets/BudgetTracker.png`,
+    description: 'Developed GUI interface for monitoring active connections, logging requests, and viewing connection Developed a comprehensive budget management application for both desktop and web platforms.',
+    features: [
+      'Robust CRUD operations for transactions',
+      'Integrated calendar for tracking expenses',
+      'Dynamic graphs and visualizations for financial data',
+      'Cross-platform support for desktop and web'
+    ],
+    tech: ['React', 'Express js ', ' MySql', 'C#'],
+    github: 'https://github.com/Pathum-Vimukthi-Kumara/Budget_Tracker',
+    demo: 'https://github.com/Pathum-Vimukthi-Kumara/Budget_Tracker',
   },
 
 

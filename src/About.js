@@ -91,6 +91,23 @@ const About = () => {
           </div>
         </div>
 
+        {/* Education */}
+        <div className="mt-12 animate-fadeInUp">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6 gradient-text-enhanced">Education</h2>
+          <div className="glass-card p-6 rounded-2xl border border-purple-secondary/20 hover:border-purple-secondary/50 transition-all duration-300">
+            <div className="flex items-start gap-4">
+              <div className="p-3 rounded-xl bg-purple-secondary/10 text-purple-secondary group-hover:bg-purple-secondary group-hover:text-white transition-all duration-300">
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422M12 14v6M12 20l-6.16-3.422" /></svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-1">B.Eng. (Hons) — Computer Engineering (Undergraduate)</h3>
+                <p className="text-sm text-purple-light/70 leading-relaxed mb-2">University of Ruhuna — Faculty of Engineering</p>
+                <p className="text-xs text-purple-accent/80 uppercase tracking-wide">Department of Electrical & Information Engineering</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Closing CTA */}
         <div className="glass-card p-8 sm:p-12 rounded-3xl text-center border border-purple-secondary/30 relative overflow-hidden animate-fadeInUp" style={{ animationDelay: '0.6s' }}>
           <div className="absolute top-0 right-0 w-64 h-64 bg-purple-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
