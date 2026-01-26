@@ -271,7 +271,7 @@ const Projects = () => {
 
         {/* Project Modal - Enhanced Case Study */}
         {modalOpen && selectedProject && (
-          <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-[120] p-4 animate-fadeIn" onClick={closeModal}>
+          <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-[99999] p-4 animate-fadeIn" onClick={closeModal}>
             <div className="bg-purple-card rounded-3xl w-full max-w-5xl h-full max-h-[90vh] overflow-hidden shadow-glow-2xl border border-purple-secondary/30 flex flex-col" onClick={(e) => e.stopPropagation()}>
               <div className="flex justify-between items-center px-6 py-4 border-b border-purple-secondary/20 bg-purple-dark/40 backdrop-blur-md">
                 <div className="flex gap-2">
