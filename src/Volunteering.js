@@ -67,7 +67,7 @@ const Volunteering = () => {
           {/* Right: Content & Roles */}
           <div className="lg:w-1/2 space-y-8 animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
             <div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6">Social Responsibility</h3>
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6">Volunteering Experience</h3>
               <div className="space-y-4 text-purple-light/90 text-sm sm:text-base leading-relaxed">
                 <p>
                   As the <span className="text-purple-secondary font-bold">Program Team Lead for Winning Hearts 1.0</span>, I spearheaded community outreach initiatives, coordinating the delivery of essential donations and educational support to underprivileged students.

@@ -33,19 +33,19 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-[100] backdrop-blur-xl bg-purple-dark/95 border-b border-purple-secondary/20 shadow-2xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
-        <nav className="flex justify-between items-center">
+        <nav className="relative flex justify-between items-center">
           {/* Logo/Brand */}
           <Link
             to="/"
-            className="flex items-center space-x-2 sm:space-x-3 group"
+            className="absolute left-1/2 transform -translate-x-1/2 md:static md:left-auto md:transform-none flex items-center space-x-2 sm:space-x-3 group"
             onClick={closeMobileMenu}
           >
             <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-purple-secondary to-purple-primary rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-purple-secondary/30 transition-all duration-300 group-hover:scale-105">
               <span className="text-white font-bold text-sm sm:text-lg">P</span>
             </div>
-            <div className="hidden sm:block">
-              <h1 className="text-xl sm:text-2xl font-bold gradient-text-enhanced">Pathum.dev</h1>
-              <p className="text-xs text-purple-light/70 -mt-1">Developer & Cybersecurity Enthusiast</p>
+            <div className="block sm:block ml-2">
+              <h1 className="text-lg sm:text-2xl font-bold gradient-text-enhanced">Pathum.dev</h1>
+              <p className="text-[10px] sm:text-xs text-purple-light/70 -mt-1">Developer & Cybersecurity Enthusiast</p>
             </div>
           </Link>
 
@@ -57,7 +57,7 @@ const Header = () => {
                 to={link.to}
                 className={`relative px-3 lg:px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 group ${isActive(link.to)
                   ? 'text-purple-secondary bg-purple-secondary/10'
-                  : 'text-purple-light hover:text-purple-secondary hover:bg-purple-secondary/5'
+                  : 'text-purple-light hover:text-black hover:bg-purple-secondary/5'
                   }`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >

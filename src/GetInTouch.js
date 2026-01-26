@@ -15,7 +15,7 @@ const GetInTouch = () => (
         </p>
       </div>
 
-      <div className="flex flex-nowrap overflow-x-auto pb-10 gap-6 snap-x hide-scrollbar md:grid md:grid-cols-2 max-w-5xl mx-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+      <div className="flex flex-nowrap overflow-x-auto pb-10 gap-6 snap-x hide-scrollbar md:grid md:grid-cols-2 max-w-5xl mx-auto">
         {/* Email Card */}
         <a
           href="mailto:kpathum616@gmail.com"

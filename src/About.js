@@ -47,10 +47,10 @@ const About = () => {
               Hey there! I'm <span className="text-purple-secondary font-bold text-xl sm:text-2xl">Pathum Vimukthi</span>. My journey into the digital realm wasn't just about learning syntax; it was about discovering the power to solve real-world problems through engineering.
             </p>
             <p>
-              I specialize in <span className="text-white border-b border-purple-secondary/50 font-medium">Full-Stack Development</span> and <span className="text-white border-b border-purple-secondary/50 font-medium">Cybersecurity</span>. I believe that a great application isn't just one that works it's one that's secure by design, exceptionally fast, and built to scale.
+              I work across the entire stack backend and frontend building APIs, databases, and polished user interfaces with a security first approach. I believe a great application is secure by design, fast, and built to scale.
             </p>
             <p>
-              When I'm not architecting back-end services or refining front-end experiences, I'm deep-diving into penetration testing and exploring new ways to harden systems against modern threats. To me, every bug is a puzzle and every vulnerability is an opportunity to learn.
+              I handle everything from server-side architecture to client-side UX, and I regularly perform penetration testing to harden systems against modern threats. Every bug is a puzzle and every vulnerability is an opportunity to learn.
             </p>
             <div className="pt-6">
               <div className="flex items-center gap-6">

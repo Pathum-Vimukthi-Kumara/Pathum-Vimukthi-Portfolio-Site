@@ -219,7 +219,7 @@ const Certificate = () => {
 
       {/* Modal */}
       {modalOpen && selectedItem && (
-        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-50 p-2 sm:p-4" onClick={closeModal}>
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-[120] p-2 sm:p-4" onClick={closeModal}>
           <div
             className="bg-purple-card rounded-3xl w-full max-w-4xl max-h-[95vh] sm:max-h-[90vh] overflow-y-auto shadow-2xl border-2 border-purple-secondary animate-in zoom-in duration-300"
             onClick={(e) => e.stopPropagation()}
