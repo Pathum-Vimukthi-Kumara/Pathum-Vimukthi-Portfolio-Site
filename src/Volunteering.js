@@ -13,7 +13,7 @@ const Volunteering = () => {
     "Program Team Lead - Winning Hearts 1.0",
     "Public Relations Member - IEEE Eminence",
     "Contributor - ECSL Project",
-    "HaXtreme 3.0 & Mehewara Volunteer",
+    "HaXtreme 3.0 Program Team member & Mehewara coordinator ",
   ];
 
   return (
