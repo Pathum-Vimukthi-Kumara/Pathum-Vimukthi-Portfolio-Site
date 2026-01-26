@@ -85,17 +85,17 @@ const Home = () => {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mt-6 sm:mt-8">
+            <div className="flex flex-row gap-2 justify-center lg:justify-start mt-6 sm:mt-8">
               <button
                 type="button"
-                className="btn-primary w-full sm:w-auto px-6 py-3 sm:py-4 text-sm sm:text-base touch-target rounded-lg bg-purple-secondary text-white hover:bg-purple-primary transition duration-300 shadow-md"
+                className="btn-primary mobile-small-btn w-1/2 sm:w-auto px-3 py-2 sm:px-6 sm:py-3 text-xs sm:text-base touch-target rounded-md bg-purple-secondary text-white hover:bg-purple-primary transition duration-300 shadow-md"
                 onClick={() => setIsCvPreviewOpen(true)}
               >
-                Preview Resume
+                Preview
               </button>
 
               <button
-                className="btn-secondary w-full sm:w-auto px-6 py-3 sm:py-4 text-sm sm:text-base touch-target"
+                className="btn-secondary mobile-small-btn w-1/2 sm:w-auto px-3 py-2 sm:px-6 sm:py-3 text-xs sm:text-base touch-target rounded-md"
                 onClick={() => navigate('/get-in-touch')}
               >
                 Get in Touch
@@ -104,21 +104,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Scroll Down Indicator */}
-        <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="flex flex-col items-center text-purple-accent">
-            <span className="text-xs sm:text-sm mb-1 font-medium">Scroll Down</span>
-            <svg
-              className="w-5 h-5 sm:w-6 sm:h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m0 0V3" />
-            </svg>
-          </div>
-        </div>
+        
       </div>
 
       {/* CV Preview Modal */}

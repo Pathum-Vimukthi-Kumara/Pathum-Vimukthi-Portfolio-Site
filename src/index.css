@@ -314,6 +314,12 @@ svg [stroke] { stroke: currentColor; }
 /* Z-index utilities */
 .z-10 { z-index: 10; }
 
+/* Mobile helper to set compact button padding, restored on sm+ */
+.mobile-small-btn { --btn-padding: 0.35rem 0.8rem; }
+@media (min-width: 640px) {
+  .mobile-small-btn { --btn-padding: unset; }
+}
+
 /* Opacity utilities */
 .opacity-0 { opacity: 0; }
 .group-hover\:opacity-100:hover { opacity: 1; }
@@ -391,6 +397,15 @@ svg [stroke] { stroke: currentColor; }
 
 /* Overflow */
 .overflow-hidden { overflow: hidden; }
+
+/* Hide native scrollbars but keep scrolling (for mobile swipe carousels) */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
 
 /* Position */
 .relative { position: relative; }
@@ -471,7 +486,7 @@ svg [stroke] { stroke: currentColor; }
   background: linear-gradient(135deg, #a259f7, #7f5af0);
   border: none;
   color: white;
-  padding: 0.75rem 2rem;
+  padding: var(--btn-padding, 0.75rem 2rem);
   border-radius: 0.75rem;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -487,7 +502,7 @@ svg [stroke] { stroke: currentColor; }
   background: transparent;
   border: 2px solid #a259f7;
   color: #a259f7;
-  padding: 0.75rem 2rem;
+  padding: var(--btn-padding, 0.75rem 2rem);
   border-radius: 0.75rem;
   font-weight: 600;
   transition: all 0.3s ease;

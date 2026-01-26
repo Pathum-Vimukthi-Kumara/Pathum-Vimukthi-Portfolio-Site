@@ -8,7 +8,7 @@ const Volunteering = () => {
     const images = [
     `${process.env.PUBLIC_URL}/assets/winning_hearts_oc_flyer.jpg`,
     `${process.env.PUBLIC_URL}/assets/WinningHeartsOC.jpg`,
-    `${process.env.PUBLIC_URL}/assets/Eminence.jpg`,
+    
 
     `${process.env.PUBLIC_URL}/assets/about.jpg`,
   ];

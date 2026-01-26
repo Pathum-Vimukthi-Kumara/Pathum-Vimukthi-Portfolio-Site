@@ -22,8 +22,8 @@ const competitions = [
   },
   {
     title: 'VoltCast 1.0',
-    description: 'Second Runners-up at VoltCast 1.0 in Power & Energy Engineering.',
-    shortDescription: 'Outstanding achievement in showcasing excellent ideas recognized as exemplary within the field.',
+    description: 'Outstanding achievement in showcasing excellent ideas recognized as exemplary within the field.',
+    shortDescription: 'Second Runners-up at VoltCast 1.0 ',
     date: 'September 2024',
     issuer: 'Power and Energy Society (PES) & IIEIS',
     image: `${process.env.PUBLIC_URL}/assets/VoltCast 1.0 Competition.jpg`,
@@ -65,8 +65,8 @@ const Certificate = () => {
   };
 
   return (
-    <div className="min-h-screen bg-purple-gradient pt-20 p-4 sm:p-8">
-      <div className="max-w-7xl mx-auto py-8 sm:py-16">
+    <div className="bg-purple-gradient pt-12 p-4 sm:p-6">
+      <div className="max-w-7xl mx-auto py-4 sm:py-8">
         <div className="text-center mb-8 sm:mb-12">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-secondary to-purple-primary bg-clip-text text-transparent">
             Achievements
@@ -74,37 +74,42 @@ const Certificate = () => {
           <h2 className="text-lg sm:text-xl text-purple-accent font-medium">Competitions & Certifications</h2>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 justify-items-center">
+        <div
+          className="flex gap-3 overflow-x-auto pb-4 -mx-4 px-4 snap-x snap-mandatory hide-scrollbar sm:gap-6 sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:pb-0 sm:mx-0 sm:px-0"
+          style={{ WebkitOverflowScrolling: 'touch' }}
+        >
           {competitions.map((item, index) => (
-            <div 
+            <div
               key={index}
-              className="bg-purple-card rounded-2xl shadow-lg shadow-purple-secondary/20 w-full max-w-sm h-auto sm:h-96 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl hover:shadow-purple-secondary/30 border-2 border-transparent hover:border-purple-secondary overflow-hidden"
+              className="flex-shrink-0 w-[220px] snap-center bg-purple-card rounded-2xl shadow-lg shadow-purple-secondary/20 sm:w-full sm:min-w-0 h-[360px] sm:h-auto min-h-[280px] sm:min-h-0 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl hover:shadow-purple-secondary/30 border-2 border-transparent hover:border-purple-secondary overflow-hidden flex flex-col"
             >
-              <img 
-                src={item.image} 
-                alt={item.title} 
-                className="w-full h-40 sm:h-48 object-cover rounded-t-2xl"
-              />
-              <div className="p-4 sm:p-5 flex flex-col h-auto sm:h-48">
+                <img 
+                  src={item.image} 
+                  alt={item.title} 
+                  className="w-full h-24 sm:h-36 md:h-44 object-cover rounded-t-2xl"
+                />
+                <div className="p-3 sm:p-4 flex flex-col h-full">
                 <h3 className="text-base sm:text-lg font-bold text-purple-light mb-2 line-clamp-2">
                   {item.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-purple-accent mb-3 flex-grow line-clamp-3">
+                <p className="text-xs sm:text-sm text-purple-accent mb-2 flex-grow line-clamp-2">
                   {item.shortDescription}
                 </p>
-                <div className="flex justify-between items-center mb-3 text-xs">
-                  <span className="text-purple-secondary font-medium truncate mr-2">{item.issuer}</span>
-                  <span className="text-purple-accent">{item.date}</span>
+                <div className="flex justify-between items-center mb-2 text-xs">
+                  <span className="text-purple-secondary font-medium truncate mr-2 text-sm">{item.issuer}</span>
+                  <span className="text-purple-accent text-sm">{item.date}</span>
                 </div>
-                <button 
-                  className="w-full bg-purple-secondary text-white py-2 px-4 rounded-lg font-semibold transition-colors duration-200 hover:bg-purple-primary touch-target"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    openModal(item);
-                  }}
-                >
-                  View
-                </button>
+                <div className="mt-auto">
+                  <button 
+                    className="bg-purple-secondary text-white mobile-small-btn py-1 px-3 rounded-md font-semibold transition-colors duration-200 hover:bg-purple-primary touch-target self-start text-sm"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      openModal(item);
+                    }}
+                  >
+                    View
+                  </button>
+                </div>
               </div>
             </div>
           ))}
@@ -128,10 +133,11 @@ const Certificate = () => {
               </button>
             </div>
             <div className="p-4 sm:p-6 md:flex md:gap-6">
-              <img 
-                src={selectedItem.certificateImage} 
+              <img
+                src={selectedItem.certificateImage}
                 alt={`${selectedItem.title} Certificate`}
-                className="w-full md:w-1/2 max-h-64 sm:max-h-96 object-contain rounded-xl border border-purple-secondary/40 bg-purple-background/50 mb-4 sm:mb-6 md:mb-0"
+                className="w-full md:w-1/2 max-w-full h-auto object-contain rounded-xl border border-purple-secondary/40 bg-purple-background/50 mb-4 sm:mb-6 md:mb-0"
+                style={{ maxHeight: '85vh' }}
               />
               <div className="md:w-1/2 text-purple-light">
                 <h3 className="text-lg sm:text-xl font-semibold text-purple-secondary mb-3 sm:mb-4">Details</h3>
