@@ -15,7 +15,9 @@ const projects = [
       'Role-based dashboards for users and admins',
       'Complaint submission with automatic timestamping and status history',
       'Admin-controlled custom status updates and activity tracking',
-      'Invitation-based login with public registration for low-level roles'
+      'Invitation-based login with public registration for low-level roles',
+      'JWT-based authentication (access & refresh tokens) for secure sessions',
+      'Passwords stored securely using hashing (bcrypt) and salted encryption'
     ],
     tech: ['React','Nest js','MySql'],
     github: 'https://github.com/Pathum-Vimukthi-Kumara/CoRe_Test.git',
@@ -29,7 +31,9 @@ const projects = [
       'Event management and volunteer discovery system',
       'RESTful APIs with WebSocket real-time chat',
       'Donation campaign hosting and role-based access control',
-      'Optimized MySQL schema and full project lifecycle management'
+      'Optimized MySQL schema and full project lifecycle management',
+      'JWT-based authentication for API security and session management',
+      'Secure password handling with hashing and encryption (bcrypt)'
     ],
     tech: ['Ballerina','React js','MySql'],
     github: 'https://github.com/Pathum-Vimukthi-Kumara/iwb25-009-targaryenx',
