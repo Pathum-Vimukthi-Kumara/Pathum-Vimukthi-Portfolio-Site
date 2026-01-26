@@ -10,7 +10,7 @@ const projects = [
 
     title: 'Complaint Management System ',
     image: `${process.env.PUBLIC_URL}/assets/image.png`,
-    description: 'We developed and deployed a full-stack web application to digitize and streamline the complaint and maintenance request process within the Faculty of Engineering.:  Role-based dashboards for users and admins ,Complaint submission with automatic timestamping , Full complaint detail view with status history  ,Admin-controlled custom status updates (immutable once submitted) , Admin activity tracking for transparenc● Invitation-based login system (with public registration for low level uesr roles) , Real-time user feedback on complaint progression',
+    description: 'We developed and deployed a full-stack web application to digitize and streamline the complaint and maintenance request process within the Faculty of Engineering.',
     features: [
       'Role-based dashboards for users and admins',
       'Complaint submission with automatic timestamping and status history',
@@ -18,13 +18,13 @@ const projects = [
       'Invitation-based login with public registration for low-level roles'
     ],
     tech: ['React','Nest js','MySql'],
-    github: 'https://co-re-test-front.vercel.app/',
+    github: 'https://github.com/Pathum-Vimukthi-Kumara/CoRe_Test.git',
     demo: 'https://co-re-test-front.vercel.app/',
   },
       {
     title: 'Volunteer Management Platform',
     image: `${process.env.PUBLIC_URL}/assets/1.png`,
-    description: 'Developed a comprehensive volunteer management system that connects organizations with volunteers through an integrated digital platform. Architected the backend infrastructure using Ballerina, implemented RESTful APIs and WebSocket-based real-time chat for seamless communication, and designed an optimized MySQL database schema. The platform features event management, volunteer discovery and application system, donation campaign hosting, and role-based access control. Managed the complete project lifecycle from architecture design to deployment, ensuring efficient data management and smooth frontend-backend integration.',
+    description: 'Developed a comprehensive volunteer management system that connects organizations with volunteers through an integrated digital platform. ',
     features: [
       'Event management and volunteer discovery system',
       'RESTful APIs with WebSocket real-time chat',
@@ -38,7 +38,7 @@ const projects = [
    {
     title: 'Budget Tracker',
     image: `${process.env.PUBLIC_URL}/assets/BudgetTracker.png`,
-    description: ' It features a GUI interface for monitoring active connections, logging requests, and viewing connection Developed a comprehensive budget management application for both desktop and web platforms, featuring robust CRUD operations, an integrated calendar for tracking expenses, and dynamic graphs for visualizing financial data. This project enhances user experience by providing intuitive tools for effective budget planning and management..',
+    description: 'Developed GUI interface for monitoring active connections, logging requests, and viewing connection Developed a comprehensive budget management application for both desktop and web platforms.',
     features: [
       'Robust CRUD operations for transactions',
       'Integrated calendar for tracking expenses',
@@ -51,9 +51,9 @@ const projects = [
   },
 
      {
-    title: 'Phishing-Detection',
+    title: 'Phishing Detection',
     image: `${process.env.PUBLIC_URL}/assets/phishing_extension.jpg`,
-    description: 'PhishGuard is a Chrome extension that detects phishing by scanning pages and links, using a local Flask API for on-device URL and text classification to warn users, block malicious sites, and preserve privacy.',
+    description: 'PhishGuard is a Chrome extension that detects phishing by scanning pages and links.',
     features: [
       'On-device URL and text classification using a local Flask API',
       'Real-time phishing detection and user warnings',
@@ -68,7 +68,7 @@ const projects = [
     {
     title: 'Network Monitoring Dashboard',
     image: `${process.env.PUBLIC_URL}/assets/NetworkDashboard.jpg`,
-    description: 'A real-time network flood attack monitoring and visualization system that tracks network performance and topology, monitors key metrics (latency, throughput, packet loss), and provides live charts, alerts, and filtering to help administrators quickly detect attacks, diagnose issues',
+    description: 'A real-time network flood attack monitoring and visualization system.',
     features: [
       'Real-time monitoring of network performance and topology',
       'Live charts and visualizations for key metrics',
