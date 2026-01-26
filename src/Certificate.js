@@ -2,6 +2,25 @@
 import React, { useState } from 'react';
 
 const competitions = [
+    {
+    title: 'Coderally 6.0',
+    description: 'Our team Cyclone X 2nd Runner-Up at Coderally 6.0, organized by the IEEE Computer Society of Informatics Institute of Technology ',
+    shortDescription: 'Cyclone X 2nd Runner-Up at Coderally 6.0',
+    date: 'September 2025',
+    issuer: 'IEEE Computer Society of Informatics Institute of Technology',
+    image: `${process.env.PUBLIC_URL}/assets/coderally.jpeg`,
+    certificateImage: `${process.env.PUBLIC_URL}/assets/coderally.jpeg`,
+  },
+
+    {
+    title: 'VoltCast 1.0',
+    description: 'Outstanding achievement in showcasing excellent ideas recognized as exemplary within the field.',
+    shortDescription: 'Second Runners-up at VoltCast 1.0 ',
+    date: 'September 2024',
+    issuer: 'Power and Energy Society (PES) & IIEIS',
+    image: `${process.env.PUBLIC_URL}/assets/VoltCast 1.0 Competition.jpg`,
+    certificateImage: `${process.env.PUBLIC_URL}/assets/volt.jpg`,
+  },
   {
     title: 'CyberRush',
     description: 'Our team, TargaryenX, also successfully participated in the Cyber Rush Offensive Capture The Flag (CTF) Competition, another challenging event organized by the Department of Computer Science & Engineering, University of Moratuwa, as part of the esteemed CodeJam Event Series. The initial qualification round was a demanding cybersecurity quiz, rigorously testing both offensive and defensive cybersecurity knowledge. With our outstanding performance, we secured our place in the finals among over 100 highly skilled participants.In the final round, held at the University of Moratuwa, we faced an intensive offensive Capture The Flag challenge involving penetration testing, vulnerability exploitation, reverse engineering, cryptographic analysis, and web security assessments. Demonstrating quick problem-solving, strategic thinking, and strong cybersecurity expertise, our team effectively navigated complex scenarios under considerable pressure. Through strong teamwork and technical proficiency, team TargaryenX secured an outstanding 4th place finish, highlighting our practical skills and deep understanding of cybersecurity principles.',
@@ -11,6 +30,7 @@ const competitions = [
     image: `${process.env.PUBLIC_URL}/assets/CyberRush.jpg`,
     certificateImage: `${process.env.PUBLIC_URL}/assets/CyberRush.jpg`,
   },
+
   {
     title: 'CodeX',
     description: 'I participated in the CodeX , a highly competitive event organized by the Department of Computer Science & Engineering, University of Moratuwa, as part of their renowned CodeJam Event Series. Representing our team TargaryenX, we initially competed against more than 200 talented university-level programmers in a rigorous algorithmic coding challenge. Our team exceptional performance allowed us to advance into the finals, which were held at the University of Moratuwa.',
@@ -20,15 +40,7 @@ const competitions = [
     image: `${process.env.PUBLIC_URL}/assets/CodeX.jpg`,
     certificateImage: `${process.env.PUBLIC_URL}/assets/CodeX.jpg`,
   },
-  {
-    title: 'VoltCast 1.0',
-    description: 'Outstanding achievement in showcasing excellent ideas recognized as exemplary within the field.',
-    shortDescription: 'Second Runners-up at VoltCast 1.0 ',
-    date: 'September 2024',
-    issuer: 'Power and Energy Society (PES) & IIEIS',
-    image: `${process.env.PUBLIC_URL}/assets/VoltCast 1.0 Competition.jpg`,
-    certificateImage: `${process.env.PUBLIC_URL}/assets/volt.jpg`,
-  },
+
    {
     title: 'XTREME 18.0',
     description: 'Our team, BugBustersPYL, proudly participated in one of the largest global coding competitions, demonstrating our skills in problem-solving, algorithmic challenges, and teamwork.',
@@ -39,15 +51,7 @@ const competitions = [
     certificateImage: `${process.env.PUBLIC_URL}/assets/IEEEXTREME.jpg`,
   },
 
-   {
-    title: 'Coderally 6.0',
-    description: 'Our team Cyclone X 2nd Runner-Up at Coderally 6.0, organized by the IEEE Computer Society of Informatics Institute of Technology ',
-    shortDescription: 'Cyclone X 2nd Runner-Up at Coderally 6.0',
-    date: 'September 2025',
-    issuer: 'IEEE Computer Society of Informatics Institute of Technology',
-    image: `${process.env.PUBLIC_URL}/assets/coderally.jpeg`,
-    certificateImage: `${process.env.PUBLIC_URL}/assets/coderally.jpeg`,
-  },
+ 
 
 ];
 
