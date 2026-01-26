@@ -36,7 +36,7 @@ const Home = () => {
           {/* Text Content */}
           <div className="order-2 lg:order-1 lg:w-3/5 text-center lg:text-left animate-fadeInUp px-4 sm:px-0">
             <div className="inline-block px-3 py-1 rounded-full bg-purple-secondary/10 border border-purple-secondary/30 text-purple-accent text-xs sm:text-sm font-medium mb-6">
-              Available for new opportunities
+              Seeking internship opportunities
             </div>
             <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold mb-6 gradient-text-enhanced leading-tight tracking-tight">
               Code. Create. Innovate.

@@ -30,7 +30,8 @@ const Skills = () => {
             <div className="flex flex-wrap gap-2.5">
               {[
                 'React', 'Next.js', 'JavaScript', 'Tailwind CSS', 'Responsive UI/UX',
-                'Node/Express', 'Nest JS', 'Java/SpringBoot', 'RESTful APIs', 'Ballerina'
+                'Node/Express', 'Nest JS', 'Java/SpringBoot', 'RESTful APIs', 'Ballerina',
+                'Flutter', 'Dart'
               ].map((skill) => (
                 <span key={skill} className="px-4 py-2 rounded-xl bg-white/5 border border-purple-secondary/10 text-purple-light/90 text-xs font-semibold hover:bg-purple-secondary/30 hover:text-white transition-all cursor-default">
                   {skill}
@@ -70,6 +71,7 @@ const Skills = () => {
             <div className="flex flex-wrap gap-2.5">
               {[
                 'Linux / Bash', 'Docker', 'Jenkins', 'CI/CD Pipelines', 'AWS', 'Git / GitHub',
+                'Terraform', 'Ansible',
                 'MySQL', 'MongoDB', 'MariaDB', 'PostgreSQL'
               ].map((skill) => (
                 <span key={skill} className="px-4 py-2 rounded-xl bg-white/5 border border-purple-secondary/10 text-purple-light/90 text-xs font-semibold hover:bg-purple-secondary/30 hover:text-white transition-all cursor-default">
@@ -90,6 +92,25 @@ const Skills = () => {
             <div className="flex flex-wrap gap-2.5">
               {[
                 'C', 'C++', 'System Architecture', 'Assembly', 'Embedded Systems'
+              ].map((skill) => (
+                <span key={skill} className="px-4 py-2 rounded-xl bg-white/5 border border-purple-secondary/10 text-purple-light/90 text-xs font-semibold hover:bg-purple-secondary/30 hover:text-white transition-all cursor-default">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* 5. Languages */}
+          <div className="flex-shrink-0 w-[85vw] sm:w-[350px] md:w-auto glass-card p-8 rounded-3xl border border-purple-secondary/20 hover:border-purple-secondary/40 transition-all duration-500 hover:-translate-y-2 group snap-center">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="w-12 h-12 rounded-2xl bg-purple-secondary/20 flex items-center justify-center text-purple-accent group-hover:bg-purple-secondary group-hover:text-white transition-all">
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v8m4-4H8" /></svg>
+              </div>
+              <h3 className="text-xl font-bold text-white uppercase tracking-tight">Languages</h3>
+            </div>
+            <div className="flex flex-wrap gap-2.5">
+              {[
+                'Python', 'Java', 'C#'
               ].map((skill) => (
                 <span key={skill} className="px-4 py-2 rounded-xl bg-white/5 border border-purple-secondary/10 text-purple-light/90 text-xs font-semibold hover:bg-purple-secondary/30 hover:text-white transition-all cursor-default">
                   {skill}
