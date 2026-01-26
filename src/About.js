@@ -55,7 +55,7 @@ const About = () => {
             <div className="pt-6">
               <div className="flex items-center gap-6">
                 <div>
-                  <h4 className="text-3xl font-bold text-white">4+</h4>
+                  <h4 className="text-3xl font-bold text-white">7+</h4>
                   <p className="text-xs text-purple-accent uppercase tracking-widest">Major Projects</p>
                 </div>
                 <div className="w-px h-10 bg-purple-secondary/30"></div>
@@ -100,33 +100,15 @@ const About = () => {
                 <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422M12 14v6M12 20l-6.16-3.422" /></svg>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white mb-1">B.Eng. (Hons) — Computer Engineering (Undergraduate)</h3>
-                <p className="text-sm text-purple-light/70 leading-relaxed mb-2">University of Ruhuna — Faculty of Engineering</p>
+                <h3 className="text-xl font-bold text-white mb-1">B.Eng. (Hons)  Computer Engineering (Undergraduate)</h3>
+                <p className="text-sm text-purple-light/70 leading-relaxed mb-2">University of Ruhuna Faculty of Engineering</p>
                 <p className="text-xs text-purple-accent/80 uppercase tracking-wide">Department of Electrical & Information Engineering</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Closing CTA */}
-        <div className="glass-card p-8 sm:p-12 rounded-3xl text-center border border-purple-secondary/30 relative overflow-hidden animate-fadeInUp" style={{ animationDelay: '0.6s' }}>
-          <div className="absolute top-0 right-0 w-64 h-64 bg-purple-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6 relative z-10">Want to build something secure and amazing?</h2>
-          <p className="text-purple-light/80 mb-8 max-w-2xl mx-auto relative z-10">
-            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
-          </p>
-          <a
-            href="#get-in-touch"
-            className="btn-primary inline-flex items-center gap-2 relative z-10"
-            onClick={(e) => {
-              e.preventDefault();
-              document.getElementById('get-in-touch-section')?.scrollIntoView({ behavior: 'smooth' });
-            }}
-          >
-            Let's Start a Conversation
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
-          </a>
-        </div>
+       
       </div>
     </div>
   );
