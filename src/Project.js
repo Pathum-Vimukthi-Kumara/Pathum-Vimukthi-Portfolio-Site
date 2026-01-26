@@ -148,10 +148,11 @@ const Projects = () => {
                 <div className="flex flex-row gap-3 mt-auto justify-start items-end">
                   <button
                     type="button"
+                    aria-label={`Details for ${project.title}`}
                     onClick={() => openModal(project)}
                     className="btn-primary mobile-small-btn self-start px-3 py-1 text-sm w-auto sm:flex-1 text-center touch-target rounded-md"
                   >
-                    View
+                    Details
                   </button>
                   <a
                     href={project.github}

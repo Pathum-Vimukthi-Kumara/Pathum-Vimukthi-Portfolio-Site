@@ -105,13 +105,14 @@ const Certificate = () => {
                 </div>
                 <div className="mt-auto">
                   <button 
+                    aria-label={`Details for ${item.title}`}
                     className="bg-purple-secondary text-white mobile-small-btn py-1 px-3 rounded-md font-semibold transition-colors duration-200 hover:bg-purple-primary touch-target self-start text-sm"
                     onClick={(e) => {
                       e.stopPropagation();
                       openModal(item);
                     }}
                   >
-                    View
+                    Details
                   </button>
                 </div>
               </div>
