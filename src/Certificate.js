@@ -1,5 +1,6 @@
 // src/components/Certificate.js
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const competitions = [
   {
@@ -217,6 +218,16 @@ const Certificate = () => {
         </div>
       </div>
 
+      {/* View All Achievements button aligned with content container */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+        <div className="flex justify-end">
+          <Link to="/achievements" className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-purple-secondary text-white font-semibold hover:opacity-90 transition">
+            View All Achievements
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+          </Link>
+        </div>
+      </div>
+
       {/* Modal */}
       {modalOpen && selectedItem && (
         <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-[120] p-2 sm:p-4" onClick={closeModal}>
@@ -257,3 +268,6 @@ const Certificate = () => {
 };
 
 export default Certificate;
+
+// export competitions array for use in AllAchievements page
+export { competitions };

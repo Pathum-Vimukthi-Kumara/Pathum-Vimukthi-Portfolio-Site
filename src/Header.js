@@ -55,21 +55,21 @@ const Header = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className={`relative px-3 lg:px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 group ${isActive(link.to)
-                  ? 'text-purple-secondary bg-purple-secondary/10'
-                  : 'text-purple-light hover:text-black hover:bg-purple-secondary/5'
-                  }`}
+                  className={`relative px-3 lg:px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 group ${isActive(link.to)
+                    ? 'text-purple-secondary bg-purple-secondary/10'
+                    : 'text-purple-light hover:text-white hover:bg-purple-secondary/30'
+                    }`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <span className="relative z-10">{link.label}</span>
 
                 {/* Active indicator */}
                 {isActive(link.to) && (
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-secondary/20 to-purple-primary/20 rounded-lg animate-pulse"></div>
+                              <div className="absolute inset-0 bg-gradient-to-r from-purple-secondary/20 to-purple-primary/20 rounded-lg animate-pulse z-0"></div>
                 )}
 
                 {/* Hover effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-secondary/10 to-purple-primary/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div className="absolute inset-0 bg-gradient-to-r from-purple-secondary/30 to-purple-primary/30 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-0"></div>
 
                 {/* Bottom border indicator */}
                 <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-purple-secondary transition-all duration-300 group-hover:w-3/4 ${isActive(link.to) ? 'w-3/4' : ''

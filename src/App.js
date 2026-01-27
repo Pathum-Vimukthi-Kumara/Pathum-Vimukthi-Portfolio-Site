@@ -11,6 +11,8 @@ import Volunteering from './Volunteering';
 import Project from './Project';
 import GetInTouch from './GetInTouch';
 import Skills from './Skills';
+import AllProjects from './AllProjects';
+import AllAchievements from './AllAchievements';
 
 // Handles scroll to section based on path
 function ScrollHandler({ sections }) {
@@ -99,6 +101,8 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/projects" element={<AllProjects />} />
+        <Route path="/achievements" element={<AllAchievements />} />
         <Route path="*" element={<MainContent />} />
       </Routes>
     </Router>
