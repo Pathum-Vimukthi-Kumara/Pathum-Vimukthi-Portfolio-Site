@@ -14,7 +14,7 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-[90vh] bg-purple-gradient pt-20 relative flex items-center overflow-hidden">
+    <div className="min-h-[90vh] bg-purple-gradient pt-20 relative flex items-center overflow-visible sm:overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 relative z-10">
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16">
 
@@ -49,9 +49,9 @@ const Home = () => {
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-8">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mt-8 w-full sm:w-auto">
               <button
-                className="btn-primary flex items-center justify-center gap-2 group w-full sm:w-auto"
+                className="btn-primary w-full sm:w-auto flex items-center justify-center gap-2 group px-6 py-3 text-sm sm:text-base"
                 onClick={scrollToProjects}
               >
                 View My Projects
@@ -60,16 +60,17 @@ const Home = () => {
                 </svg>
               </button>
 
-              <div className="flex gap-2 w-full sm:w-auto">
+              <div className="flex w-full sm:w-auto gap-2 mt-0 sm:mt-0">
                 <button
                   type="button"
-                  className="btn-secondary flex-1 sm:flex-none"
+                  className="btn-secondary w-1/2 sm:w-auto px-3 py-2 text-sm sm:!px-4 sm:!py-2"
                   onClick={() => setIsCvPreviewOpen(true)}
                 >
                   My Resume
                 </button>
+
                 <button
-                  className="btn-secondary flex-1 sm:flex-none"
+                  className="btn-secondary w-1/2 sm:w-auto px-3 py-2 text-sm sm:!px-4 sm:!py-2"
                   onClick={() => navigate('/get-in-touch')}
                 >
                   Contact Me

@@ -58,8 +58,8 @@ const AllProjects = () => {
       </div>
 
       {/* Back link placed at the bottom-right of the viewport and routes to the project section on the main page */}
-      <div className="fixed bottom-6 right-6 z-50">
-        <Link to="/project" className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-purple-secondary text-white font-semibold hover:opacity-90 transition shadow-lg">
+      <div className="fixed bottom-4 right-4 z-50">
+        <Link to="/project" className="inline-flex items-center gap-1 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 text-sm sm:text-base rounded-md bg-purple-secondary text-white font-semibold hover:opacity-90 transition shadow-lg">
           Back to Home
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
         </Link>
