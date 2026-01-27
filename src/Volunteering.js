@@ -4,9 +4,12 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Volunteering = () => {
   const images = [
-    `${process.env.PUBLIC_URL}/assets/winning_hearts_oc_flyer.jpg`,
+  
     `${process.env.PUBLIC_URL}/assets/WinningHeartsOC.jpg`,
-    `${process.env.PUBLIC_URL}/assets/about.jpg`,
+    `${process.env.PUBLIC_URL}/assets/Eminece.jpeg`,
+      `${process.env.PUBLIC_URL}/assets/Rextro.jpeg`,
+    `${process.env.PUBLIC_URL}/assets/volcast1.jpeg`,
+    `${process.env.PUBLIC_URL}/assets/volunteering.jpg`,
   ];
 
   const roles = [
